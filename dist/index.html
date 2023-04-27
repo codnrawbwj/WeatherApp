@@ -9,9 +9,8 @@
     <script src="https://kit.fontawesome.com/2fee10cf11.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
     <main>
@@ -23,6 +22,7 @@
                 <button id="searchBar__button" class="searchBar__button" title="Submit Location"
                 aria-label="Enter Zip Code or City, State, and Country to retrieve weather condition">
                     <i class="fa-solid fa-cloud"></i>
+                    <i class="fas fa-sync fa-spin none"></i>
                 </button>
             </form>
         </section>
@@ -35,18 +35,23 @@
         <nav id="navButtons" class="navButtons">
             <button id="getLocation" class="button" title="Get Location" aria-label="Get the current weather conditions for your current location">
                 <i class="fa-solid fa-location-dot"></i>
+                <i class="fas fa-sync fa-spin none"></i>
             </button>
             <button id="home" class="button" title="Home Weather" aria-label="Get the current weather conditions for your home location">
-                <i class="fa-solid fa-house"></i>            
+                <i class="fa-solid fa-house"></i>
+                <i class="fas fa-sync fa-spin none"></i>            
             </button>
             <button id="saveLocation" class="button" title="Save Location" aria-label="Save your current location as your home location">
-                <i class="fa-solid fa-bookmark"></i>            
+                <i class="fa-solid fa-bookmark"></i>
+                <i class="fas fa-sync fa-spin none"></i>            
             </button>
             <button id="unit" class="button" title="Toggle Measurement Units" aria-label="Toggle between Celcius and Fahrenheit">
-                <i class="fa-solid fa-toggle-on"></i>            
+                <i class="fa-solid fa-toggle-on"></i>
+                <i class="fas fa-sync fa-spin none"></i>            
             </button>
             <button id="refresh" class="button" title="Refresh Weather" aria-label="Refresh the current weather conditions">
-                <i class="fa-sharp fa-solid fa-rotate-right"></i>           
+                <i class="fa-sharp fa-solid fa-rotate-right"></i>
+                <i class="fas fa-sync fa-spin none"></i>           
             </button>
         </nav>
         <hr>
