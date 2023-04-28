@@ -11,7 +11,7 @@
             flex-grow: 1;
             border: none;
             margin-left: 0.25rem;
-            $background-color: $button-color;
+            background-color: $button-color;
             color: $font-color;
             width: calc(100% - 52px);
             font-size: 1.25rem;
@@ -37,5 +37,9 @@
             text-shadow: 4px 2px 5px $text-shadow-color;
         }
 
+        .searchBar__form:focus-within,
+        .searchBar__form:hover {
+            box-shadow: 4px 2px 5px $text-shadow-color;
+        }
     }
 }

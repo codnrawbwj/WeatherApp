@@ -122,6 +122,7 @@ hr {
   flex-grow: 1;
   border: none;
   margin-left: 0.25rem;
+  background-color: transparent;
   color: #fff;
   width: calc(100% - 52px);
   font-size: 1.25rem;
@@ -141,4 +142,66 @@ hr {
   border: none;
   box-shadow: none;
   text-shadow: 4px 2px 5px #000;
+}
+.searchBar .searchBar__form .searchBar__form:focus-within,
+.searchBar .searchBar__form .searchBar__form:hover {
+  box-shadow: 4px 2px 5px #000;
+}
+
+.navButtons {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 0.25rem;
+}
+
+.currentForecast .currentForecast__location {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .currentForecast .currentForecast__location {
+    font-size: 1.3rem;
+  }
+}
+.currentForecast .currentForecast__conditions {
+  width: 100%;
+  font-size: 1.1rem;
+  margin: auto auto 2rem;
+  display: grid;
+}
+@media only screen and (min-width: 375px) {
+  .currentForecast .currentForecast__conditions {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .currentForecast .currentForecast__conditions {
+    font-size: 1.7rem;
+  }
+}
+.currentForecast .currentForecast__conditions .temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/span 3;
+  grid-column: 1/span 2;
+  font-size: 6rem;
+  letter-spacing: 0;
+  text-shadow: 1px 0 5px #000;
+  position: relative;
+}
+@media only screen and (min-width: 360px) {
+  .currentForecast .currentForecast__conditions .temp {
+    font-size: 8rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .currentForecast .currentForecast__conditions .temp {
+    font-size: 9rem;
+  }
 }/*# sourceMappingURL=main.css.map */
