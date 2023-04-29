@@ -112,6 +112,28 @@ hr {
   border-color: #fff;
 }
 
+.zero-vis {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .searchBar {
   padding: 0.5rem 0.5rem 1.5rem;
 }
@@ -323,4 +345,29 @@ hr {
     justify-content: center;
     align-items: center;
   }
+}
+
+.rainy {
+  background-color: rgba(0, 0, 255, 0.5);
+  background-image: url("../img/rainy.jpg");
+}
+
+.cloudy {
+  background-color: darkslategray;
+  background-image: url("../img/cloudy.jpg");
+}
+
+.snowy {
+  background-color: rgba(0, 0, 255, 0.5);
+  background-image: url("../img/snowy.jpg");
+}
+
+.night {
+  background-color: rgba(204, 0, 102, 0.5);
+  background-image: url("../img/night.jpg");
+}
+
+.thunder {
+  background-color: darkslategray;
+  background-image: url("../img/thunderstorm.jpg");
 }/*# sourceMappingURL=main.css.map */

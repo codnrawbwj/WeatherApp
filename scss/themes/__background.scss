@@ -4,7 +4,7 @@
 }
 
 .cloudy {
-    background-color: $fog;
+    background-color: $fog-color;
     background-image: url("../img/cloudy.jpg");
 }
 
@@ -14,11 +14,11 @@
 }
 
 .night {
-    background-color: $night;
+    background-color: $night-color;
     background-image: url("../img/night.jpg");
 }
 
 .thunder {
-    background-color: $fog;
+    background-color: $fog-color;
     background-image: url("../img/thunderstorm.jpg");
 }
