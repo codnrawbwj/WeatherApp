@@ -1,0 +1,24 @@
+.rainy {
+    background-color: $background-color;
+    background-image: url("../img/rainy.jpg");
+}
+
+.cloudy {
+    background-color: $fog;
+    background-image: url("../img/cloudy.jpg");
+}
+
+.snowy {
+    background-color: $background-color;
+    background-image: url("../img/snowy.jpg");
+}
+
+.night {
+    background-color: $night;
+    background-image: url("../img/night.jpg");
+}
+
+.thunder {
+    background-color: $fog;
+    background-image: url("../img/thunderstorm.jpg");
+}

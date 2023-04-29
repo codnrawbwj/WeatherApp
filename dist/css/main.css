@@ -6,6 +6,9 @@
 
 html {
   background-color: rgba(0, 0, 255, 0.5);
+  background-image: url("../img/sunny.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
