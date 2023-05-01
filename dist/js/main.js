@@ -1,7 +1,7 @@
 import {
-    addSpiner
-} from "./domFunctions";
-import CurrentLocation from "./CurrentLocation";
+    addSpinner
+} from "./domFunctions.js";
+import CurrentLocation from "./CurrentLocation.js";
 
 const currentLoc = new CurrentLocation;
 
@@ -16,9 +16,14 @@ const getGeoWeather = (event) => {
     if (event) {
         if (event.type === "click") {
             const mapIcon = document.querySelector(".fa-location-dot");
-            addSpiner(mapIcon);
-        }
+            addSpinner(mapIcon);
+        } 
     }
     if (!navigator.geolocation) geoError();
     navigator.geolocation.getCurrentPosition(geoSuccess, geoError)
+};
+
+const geoError = (errObj) => {
+    const errMsg = errObj ? errObj : "Geolocation not supported";
+    displayError(errMsg, errMsg);
 }
